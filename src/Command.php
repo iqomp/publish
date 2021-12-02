@@ -3,7 +3,7 @@
 /**
  * Command registration
  * @package iqomp/publish
- * @version 0.0.1
+ * @version 0.0.3
  */
 
 namespace Iqomp\Publish;
@@ -44,7 +44,7 @@ class Command extends HyperfCommand
 
         foreach ($extras as $extra) {
             $provider = Arr::get($extra, 'hyperf.config');
-            if (!$provider) {
+            if (!$provider || !class_exists($provider)) {
                 continue;
             }
 

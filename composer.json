@@ -2,7 +2,7 @@
     "name": "iqomp/publish",
     "description": "Automatically call publish for installed/updated modules",
     "type": "composer-plugin",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "require": {
         "composer-plugin-api": "^2.0",
         "hyperf/command": "^2.1"
